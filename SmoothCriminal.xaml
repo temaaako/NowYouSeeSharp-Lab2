@@ -1,0 +1,18 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Name="My_Window" x:Class="Lab2.MainWindow"
+        mc:Ignorable="d"
+        Title="Window of Change" Height="450" Width="800" Loaded="My_Window_Loaded">
+    <Grid>
+        <TextBox x:Name="Z" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="494,144,0,0" TextWrapping="Wrap" Text="Result" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Button x:Name="ShowInfoButton" Content="Показать текущую таблицу" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Width="209" Height="77" Click="ShowInfoButton_Click"/>
+        <Button x:Name="RecordInfoButton" Content="Обновить таблицу/создать таблицу" HorizontalAlignment="Left" Margin="10,169,0,0" VerticalAlignment="Top" Width="209" Height="77" Click="RecordInfoButton_Click"/>
+        <Button x:Name="SaveButton" Content="Сохранить таблицу" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Width="209" Height="77" Click="SaveButton_Click"/>
+        <DataGrid x:Name="Grid" HorizontalAlignment="Left" Height="399" Margin="234,10,0,0" VerticalAlignment="Top" Width="548" Loaded="Grid_Loaded" MouseUp="Grid_MouseUp" AutoGeneratingColumn="OnAutoGeneratingColumn" />
+
+    </Grid>
+</Window>
